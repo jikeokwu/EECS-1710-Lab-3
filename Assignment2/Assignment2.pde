@@ -1,5 +1,5 @@
 PImage back, dio, eren, godzilla, jotaro, kong, asteroid, powerpuff;
-float x1, x2, spawn, x, theta;
+float x1, x2, x, theta;
 PImage[] images = new PImage[5];
 
 void setup() {
@@ -14,6 +14,8 @@ void setup() {
   kong = loadImage("kong.png");
   powerpuff = loadImage("powerpuff.png");
   asteroid = loadImage("asteroid.png");
+  
+  //Resise Images
   back.resize(back.width * (height / back.height), height);
   dio.resize(dio.width * (height / dio.height), height);
   eren.resize(eren.width * (height / eren.height), height);
@@ -22,6 +24,8 @@ void setup() {
   kong.resize(kong.width * (height / kong.height), height);
   asteroid.resize(asteroid.width * (height / asteroid.height), height);
   powerpuff.resize(150, 150);
+  
+  //Put images in array
   images[0] = dio;
   images[1] = eren;
   images[2] = godzilla;
@@ -30,11 +34,8 @@ void setup() {
   
 
   theta = 0.0;
-
-  
   x1 = 0;
   x2 = 1309;
-  spawn = 0;
 }
 
 void draw() {
@@ -44,7 +45,6 @@ void draw() {
 
   x1-=10; x2-=10; spawn++;
   
-    
   if (x1 < -1309) {
     x1 = 1309;
   }
