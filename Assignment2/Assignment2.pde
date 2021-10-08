@@ -1,5 +1,5 @@
 PImage back, dio, eren, godzilla, jotaro, kong, asteroid, powerpuff;
-float x1, x2, x, theta;
+float x1, x2, x, theta, spawn;
 PImage[] images = new PImage[5];
 
 void setup() {

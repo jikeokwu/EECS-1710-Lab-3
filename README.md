@@ -9,3 +9,7 @@ Hold the mouse down and drag to draw. Up arrow key to wipe and change to black. 
 ## Assignment 2
 
 I had a **city parralax background**. The **generative landscape** was incorporated by **randomly spawning enemies** for the powerpuff girls to fight. It **get's repetive after seeing one or two enemies**, but this can be extended by **adding more enemies or changing enemy behavior**.
+
+## Project 1
+
+Created a class of flying creatures that fly arround the main creature. The initial size, speed of growth, largest size are all randomly generated. Then the creatures track the mouse
